@@ -7,4 +7,4 @@ Professor(subclasse folha);
 Aluno, subclasse de pessoa, ancestral de:
 Bolsista (subclasse folha e especialização de Aluno) e
 Técnico  (subclasse folha e especialização de Aluno).
-São utilizados os conceitos de herança para implementação e herança para diferença, encapsulamento, classe abstrata, métodos getterse setters e sobreposição de métodos.
+São utilizados os conceitos de herança para implementação e herança para diferença, encapsulamento, classe abstrata, métodos getters e setters e sobreposição de métodos.
