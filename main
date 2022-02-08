@@ -1,0 +1,51 @@
+package heranca;
+
+public class Heranca {
+
+//METODO FINAL NÃO PODE SER SOBREPOSTO
+//CLASSE FINAL NÃO PODE TER FILHAS
+//CLASSE ABSTRATA NÃO GERA OBJETOS. EXEMPLO: Classe Pessoa é final, portanto o objeto new Pessoa não pode ser instanciado.
+
+    public static void main(String[] args) {
+     Visitante v1 = new Visitante ();
+     v1.setNome("Laís");
+     System.out.println(v1.detalhes());
+
+    //Herança para diferença: subclasse que possui novos atributos e métodos
+    Aluno a1 = new Aluno (); 
+    a1.setNome("Claudio");
+    a1.setCurso("TI");
+    a1.setIdade(16);
+    a1.setSexo("masculino");
+    System.out.println(a1.detalhes());
+    a1.pagarMensalidade();
+
+    Bolsista b1 = new Bolsista ();
+    b1.setMatricula(1111);
+    b1.setNome("Jubileu");
+    b1.idade = 16;
+    b1.setBolsa(12);
+    b1.setSexo("Masculino");
+    System.out.println(b1.detalhes());
+    b1.pagarMensalidade(); //metodo Override*/
+    
+    Tecnico t1 = new Tecnico();
+    t1.setMatricula(5000);
+    t1.setNome("Jose");
+    t1.setIdade(20);
+    t1.fazerAniversario();
+    t1.setSexo("Masculino");
+    System.out.println(t1.detalhes() + "Matricula " + t1.getMatricula());
+
+    Professor p1 = new Professor ();
+    p1.setNome("Maria");
+    p1.setSexo("Feminino");
+    p1.setIdade(35);
+    p1.setSalario(3000f);
+    p1.setEspecialidade("TI");
+    p1.fazerAniversario();
+    p1.receberAumento(200f);
+    System.out.println(p1.detalhes() + "Salario " + p1.getSalario());
+    }
+    
+}
